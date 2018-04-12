@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>List of toys</title>
+</head>
+<body>
+<h1>Toys</h1>
+<a th:href="@{/addform}">Add a toy</a>
+
+<div th:each="eachToy:${toys}">
+    <p th:text="${eachToy.brand}"></p>
+    <p th:text="${eachToy.model}"></p>
+    <p th:text="${eachToy.date}"></p>
+    <a th:href="@{/add/{id}(id=${toy.id})}">Add</a> -
+    <a th:href="@{/detail/{id}(id=${toy.id})}">Details</a> -
+    <a th:href="@{/delete/{id}(id=${course.id})}}">Delete</a>
+</div>
+</body>
+</html>
+

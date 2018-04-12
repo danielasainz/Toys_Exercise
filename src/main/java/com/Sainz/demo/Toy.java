@@ -24,7 +24,7 @@ import java.io.Serializable;
         private String brand;
         //(you should be able to use this as a date - see below...)
         private String Date;
-        private boolean inStock;
+        //private boolean inStock;
 
 public Toy() {
 }
@@ -61,11 +61,12 @@ public Toy() {
             Date = date;
         }
 
-        public boolean isInStock() {
+        /*public boolean isInStock() {
             return inStock;
         }
 
         public void setInStock(boolean inStock) {
             this.inStock = inStock;
+            */
         }
-    }
+
